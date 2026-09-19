@@ -1,31 +1,166 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Increase Carbon</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Increase Carbon - 椰壳活性炭深加工、后处理与改性，面向净水、滤芯、炭棒、水处理及空气处理应用。">
+  <title>Increase Carbon | Activated Carbon Solutions</title>
+  <style>
+    :root{--green:#71951f;--dark:#182018;--ink:#283028;--muted:#667066;--soft:#f4f6f0;--line:#dfe5d9;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,"Noto Sans SC","Microsoft YaHei",sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+    a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line)}
+    nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+    .brand{font-weight:800;font-size:22px;letter-spacing:.6px}.brand span{color:var(--green)}
+    .links{display:flex;gap:22px;font-size:14px}.links a:hover{color:var(--green)}
+    .lang{font-size:13px;color:var(--muted);white-space:nowrap}
+    .hero{background:linear-gradient(120deg,#172118 0%,#33452a 58%,#759126 100%);color:white;padding:100px 0 90px}
+    .eyebrow{font-size:13px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:#d8e8ae}
+    h1{font-size:clamp(42px,7vw,76px);line-height:1.04;margin:12px 0 20px;max-width:900px}
+    .hero p{font-size:clamp(17px,2vw,21px);max-width:720px;color:#edf3e8}
+    .buttons{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+    .btn{padding:13px 22px;border-radius:4px;font-weight:700;display:inline-block}
+    .primary{background:#fff;color:#26351f}.secondary{border:1px solid rgba(255,255,255,.7);color:white}
+    section{padding:78px 0}.soft{background:var(--soft)}
+    .section-head{max-width:720px;margin-bottom:34px}.section-head h2{font-size:34px;margin:6px 0 10px;color:var(--dark)}
+    .section-head p{color:var(--muted);margin:0}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:white;border:1px solid var(--line);border-radius:8px;padding:26px;box-shadow:0 8px 28px rgba(34,50,25,.05)}
+    .card .tag{font-size:12px;font-weight:700;color:var(--green);letter-spacing:1px}.card h3{margin:8px 0 12px;font-size:21px}
+    .models{font-weight:700;color:#44503f}.small{font-size:14px;color:var(--muted)}
+    .cap{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.cap div{border-left:3px solid var(--green);padding:10px 16px;background:white}
+    .specs{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);border-radius:8px;overflow:hidden;background:white}
+    .spec{padding:22px 14px;text-align:center;border-right:1px solid var(--line)}.spec:last-child{border-right:0}
+    .spec b{display:block;font-size:22px;color:var(--green)}.spec span{font-size:13px;color:var(--muted)}
+    .quality{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:stretch}
+    .result{background:var(--dark);color:white;border-radius:8px;padding:30px}.result h3{margin-top:0}.result-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .result-grid div{background:rgba(255,255,255,.08);padding:13px;border-radius:4px}.result-grid b{display:block;font-size:20px}
+    .process{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.process span{background:#edf2e6;padding:8px 12px;border-radius:999px;font-size:13px}
+    .apps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.app{padding:22px 12px;text-align:center;background:white;border:1px solid var(--line);font-weight:700}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:40px}.about h2{font-size:36px;margin-top:0}.checks{padding:0;list-style:none}.checks li{margin:11px 0}.checks li:before{content:"✓";color:var(--green);font-weight:bold;margin-right:10px}
+    .contact{background:#1b241a;color:white}.contact-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:30px}.contact h2{font-size:38px;margin:0 0 12px}.contact p{color:#d9e0d5}
+    .notice{font-size:13px;color:#aeb9aa;margin-top:22px}
+    footer{background:#111711;color:#aeb6ab;padding:26px 0;font-size:13px}
+    @media(max-width:800px){
+      nav{min-height:62px}.links{display:none}.brand{font-size:19px}.hero{padding:72px 0 64px}
+      section{padding:58px 0}.grid3,.quality,.about,.contact-grid{grid-template-columns:1fr}
+      .cap{grid-template-columns:1fr 1fr}.specs{grid-template-columns:1fr 1fr}.spec{border-bottom:1px solid var(--line)}
+      .apps{grid-template-columns:1fr 1fr}.section-head h2{font-size:29px}
+    }
+    @media(max-width:480px){.cap,.specs,.apps{grid-template-columns:1fr}.spec{border-right:0}.lang{font-size:12px}}
+  </style>
 </head>
-
 <body>
-    <h1>Increase Carbon</h1>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#"><span>INCREASE</span> CARBON</a>
+      <div class="links">
+        <a href="#products">产品</a><a href="#technology">技术</a><a href="#applications">应用</a>
+        <a href="#quality">品质</a><a href="#about">关于我们</a><a href="#contact">联系</a>
+      </div>
+      <div class="lang">中文 &nbsp;|&nbsp; 日本語 &nbsp;|&nbsp; EN</div>
+    </nav>
+  </div>
+</header>
 
-    <h2>Activated Carbon Solutions</h2>
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Activated Carbon Solutions</div>
+    <h1>椰壳活性炭深加工与改性解决方案</h1>
+    <p>面向净水器、滤水壶、炭棒、水处理及空气处理应用，提供颗粒炭、炭粉及针对客户需求的后处理与改性支持。</p>
+    <div class="buttons"><a class="btn primary" href="#products">查看产品</a><a class="btn secondary" href="#contact">联系我们</a></div>
+  </div>
+</section>
 
-    <p>
-        Professional activated carbon products for water treatment
-        and industrial applications.
-    </p>
+<section id="products">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow" style="color:var(--green)">Products</div><h2>产品中心</h2><p>根据现有产品资料整理的主要产品系列。</p></div>
+    <div class="grid3">
+      <article class="card"><div class="tag">CARBON BLOCK</div><h3>炭棒生产专用炭粉</h3><p class="models">SY80-200A<br>SY80-325A<br>SY60-150A</p><p class="small">用于炭棒生产的活性炭粉产品系列。</p></article>
+      <article class="card"><div class="tag">WATER PITCHER</div><h3>滤水壶滤芯活性炭</h3><p class="models">SY20-40A<br>SY12-30A<br>SY12-40A</p><p class="small">面向滤水壶滤芯应用的颗粒活性炭。</p></article>
+      <article class="card"><div class="tag">WATER PURIFIER</div><h3>净水器滤芯活性炭</h3><p class="models">SY8-20A<br>SY10-30A<br>SY20-40A<br>SY30-60A</p><p class="small">面向净水器滤芯应用的颗粒活性炭。</p></article>
+    </div>
+  </div>
+</section>
 
-    <hr>
+<section id="technology" class="soft">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow" style="color:var(--green)">Technology</div><h2>加工与改性能力</h2><p>基于公司资料中列示的深加工及后处理工艺能力。</p></div>
+    <div class="cap">
+      <div><b>微细研磨</b><br><span class="small">用于炭棒炭粉，强调粒度均匀及调整能力。</span></div>
+      <div><b>深度酸洗除浮灰</b><br><span class="small">用于颗粒炭后处理，改善外观及相关水质表现。</span></div>
+      <div><b>水处理特殊改性</b><br><span class="small">针对水处理应用需求进行特殊改性。</span></div>
+      <div><b>空气处理特殊改性</b><br><span class="small">面向有机气体、甲醛、酸碱性气体、CO及臭氧等需求。</span></div>
+    </div>
+  </div>
+</section>
 
-    <h2>我们的产品</h2>
-    <p>椰壳活性炭 | 煤质活性炭 | 木质活性炭</p>
+<section>
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow" style="color:var(--green)">Typical Specification</div><h2>典型产品指标</h2><p>以下为现有产品宣传资料中列示的典型指标，具体规格以对应产品及双方确认要求为准。</p></div>
+    <div class="specs">
+      <div class="spec"><span>碘值</span><b>≥1000</b><small>mg/g</small></div>
+      <div class="spec"><span>水分</span><b>≤5%</b></div>
+      <div class="spec"><span>灰分</span><b>≤3%</b></div>
+      <div class="spec"><span>强度</span><b>≥95%</b></div>
+      <div class="spec"><span>pH</span><b>6–8</b></div>
+    </div>
+  </div>
+</section>
 
-    <h2>主要应用</h2>
-    <p>水处理 | 饮用水净化 | 工业废水 | 空气净化</p>
+<section id="quality" class="soft">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow" style="color:var(--green)">Quality Control</div><h2>检测与品质管理</h2><p>将产品规格与具体批次/样品检测结果分开呈现。</p></div>
+    <div class="quality">
+      <div class="card">
+        <h3>从加工到出厂检测</h3>
+        <p>公司资料强调出厂产品进行检测，并根据客户差异化要求提供技术支持。</p>
+        <div class="process"><span>原料</span><span>深加工</span><span>后处理 / 改性</span><span>检测</span><span>出厂</span></div>
+        <p class="small" style="margin-top:22px">现有资料还包含涉及饮用水卫生安全产品卫生许可批件。正式公开完整证书信息前，建议确认对外披露范围及有效状态。</p>
+      </div>
+      <div class="result">
+        <div class="eyebrow">Test Example</div>
+        <h3>SY10-30A 检测案例</h3>
+        <p class="small" style="color:#cbd5c7">酸洗椰壳活性炭，规格 10–30目；检测单日期：2026/4/8。</p>
+        <div class="result-grid">
+          <div><span>碘值</span><b>1059 mg/g</b></div>
+          <div><span>水分</span><b>4.8%</b></div>
+          <div><span>灰分</span><b>0.9%</b></div>
+          <div><span>pH</span><b>7.4</b></div>
+          <div><span>TDS</span><b>43.6</b></div>
+          <div><span>检测依据</span><b style="font-size:16px">GB/T 12496</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <hr>
+<section id="applications">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow" style="color:var(--green)">Applications</div><h2>应用领域</h2><p>围绕现有产品与改性工艺所对应的应用方向。</p></div>
+    <div class="apps"><div class="app">净水器滤芯</div><div class="app">滤水壶</div><div class="app">炭棒</div><div class="app">水处理</div><div class="app">空气处理</div></div>
+  </div>
+</section>
 
-    <p>中文 | 日本語 | English</p>
+<section id="about" class="soft">
+  <div class="wrap about">
+    <div><div class="eyebrow" style="color:var(--green)">About Us</div><h2>关于 Increase Carbon</h2><p>现有公司资料显示，生产工厂位于广东省韶关市浈江区，专注于椰壳活性炭的深度加工和后处理改性，产品覆盖炭棒用炭粉以及滤芯用颗粒炭等系列。</p><p>网站对外品牌暂使用 <b>Increase Carbon</b>；正式上线前可再确认中文公司名称、英文法人名称及品牌名称的统一写法。</p></div>
+    <div class="card"><h3>我们提供什么</h3><ul class="checks"><li>根据应用匹配产品系列</li><li>椰壳活性炭深加工与后处理</li><li>针对差异化要求提供技术支持</li><li>产品检测及售后响应</li></ul><p class="small">宣传资料同时提及东南亚自建原料基地及24小时售后响应。正式对外发布时建议确认表述和证明资料。</p></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap contact-grid">
+    <div><div class="eyebrow">Contact</div><h2>告诉我们您的应用与规格要求</h2><p>可提供产品型号、粒度、碘值、水分、灰分、pH、使用场景及预计需求量，以便后续进行产品匹配。</p></div>
+    <div class="card" style="color:var(--ink)"><h3>产品咨询</h3><p>联系电话 / Email / 联系人</p><p class="small">这里暂时保留为联系方式区域。确认希望公开的电话、邮箱和联系人后再填写。</p></div>
+  </div>
+  <div class="wrap notice">注：本 V1 页面内容依据当前提供的公司宣传资料、产品资料、检测单及资质照片整理；具体产品规格及认证信息以正式技术资料和有效文件为准。</div>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 Increase Carbon. All rights reserved.</div></footer>
 </body>
 </html>
