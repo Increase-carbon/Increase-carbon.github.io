@@ -14,7 +14,10 @@
     nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:22px}
     .brand{font-weight:800;font-size:22px;letter-spacing:.6px}.brand span{color:var(--green)}
     .links{display:flex;gap:22px;font-size:14px}.links a:hover{color:var(--green)}
-    .lang{font-size:13px;color:var(--muted);white-space:nowrap}
+    .lang{font-size:13px;color:var(--muted);white-space:nowrap;display:flex;align-items:center;gap:6px}
+    .lang button{border:0;background:transparent;color:var(--muted);font:inherit;padding:5px 3px;cursor:pointer}
+    .lang button:hover,.lang button.active{color:var(--green);font-weight:700}
+    .lang .sep{color:#a8afa5}
     .hero{background:linear-gradient(120deg,#172118 0%,#33452a 58%,#759126 100%);color:white;padding:100px 0 90px}
     .eyebrow{font-size:13px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:#d8e8ae}
     h1{font-size:clamp(42px,7vw,76px);line-height:1.04;margin:12px 0 20px;max-width:900px}
@@ -57,10 +60,14 @@
     <nav>
       <a class="brand" href="#"><span>INCREASE</span> CARBON</a>
       <div class="links">
-        <a href="#products">产品</a><a href="#technology">技术</a><a href="#applications">应用</a>
-        <a href="#quality">品质</a><a href="#about">关于我们</a><a href="#contact">联系</a>
+        <a href="#products" data-i18n="nav_products">产品</a><a href="#technology" data-i18n="nav_technology">技术</a><a href="#applications" data-i18n="nav_applications">应用</a>
+        <a href="#quality" data-i18n="nav_quality">品质</a><a href="#about" data-i18n="nav_about">关于我们</a><a href="#contact" data-i18n="nav_contact">联系</a>
       </div>
-      <div class="lang">中文 &nbsp;|&nbsp; 日本語 &nbsp;|&nbsp; EN</div>
+      <div class="lang">
+        <button type="button" data-lang="zh" class="active">中文</button><span class="sep">|</span>
+        <button type="button" data-lang="ja">日本語</button><span class="sep">|</span>
+        <button type="button" data-lang="en">EN</button>
+      </div>
     </nav>
   </div>
 </header>
@@ -69,43 +76,43 @@
 <section class="hero">
   <div class="wrap">
     <div class="eyebrow">Activated Carbon Solutions</div>
-    <h1>椰壳活性炭深加工与改性解决方案</h1>
-    <p>面向净水器、滤水壶、炭棒、水处理及空气处理应用，提供颗粒炭、炭粉及针对客户需求的后处理与改性支持。</p>
-    <div class="buttons"><a class="btn primary" href="#products">查看产品</a><a class="btn secondary" href="#contact">联系我们</a></div>
+    <h1><span data-i18n="hero_title">椰壳活性炭深加工与改性解决方案</span></h1>
+    <p><span data-i18n="hero_desc">面向净水器、滤水壶、炭棒、水处理及空气处理应用，提供颗粒炭、炭粉及针对客户需求的后处理与改性支持。</span></p>
+    <div class="buttons"><a class="btn primary" href="#products"><span data-i18n="view_products">查看产品</span></a><a class="btn secondary" href="#contact"><span data-i18n="contact_us">联系我们</span></a></div>
   </div>
 </section>
 
 <section id="products">
   <div class="wrap">
-    <div class="section-head"><div class="eyebrow" style="color:var(--green)">Products</div><h2>产品中心</h2><p>根据现有产品资料整理的主要产品系列。</p></div>
+    <div class="section-head"><div class="eyebrow" style="color:var(--green)">Products</div><h2 data-i18n="products_title">产品中心</h2><p><span data-i18n="products_desc">根据现有产品资料整理的主要产品系列。</span></p></div>
     <div class="grid3">
-      <article class="card"><div class="tag">CARBON BLOCK</div><h3>炭棒生产专用炭粉</h3><p class="models">SY80-200A<br>SY80-325A<br>SY60-150A</p><p class="small">用于炭棒生产的活性炭粉产品系列。</p></article>
-      <article class="card"><div class="tag">WATER PITCHER</div><h3>滤水壶滤芯活性炭</h3><p class="models">SY20-40A<br>SY12-30A<br>SY12-40A</p><p class="small">面向滤水壶滤芯应用的颗粒活性炭。</p></article>
-      <article class="card"><div class="tag">WATER PURIFIER</div><h3>净水器滤芯活性炭</h3><p class="models">SY8-20A<br>SY10-30A<br>SY20-40A<br>SY30-60A</p><p class="small">面向净水器滤芯应用的颗粒活性炭。</p></article>
+      <article class="card"><div class="tag">CARBON BLOCK</div><h3 data-i18n="p1_title">炭棒生产专用炭粉</h3><p class="models">SY80-200A<br>SY80-325A<br>SY60-150A</p><p class="small"><span data-i18n="p1_desc">用于炭棒生产的活性炭粉产品系列。</span></p></article>
+      <article class="card"><div class="tag">WATER PITCHER</div><h3 data-i18n="p2_title">滤水壶滤芯活性炭</h3><p class="models">SY20-40A<br>SY12-30A<br>SY12-40A</p><p class="small"><span data-i18n="p2_desc">面向滤水壶滤芯应用的颗粒活性炭。</span></p></article>
+      <article class="card"><div class="tag">WATER PURIFIER</div><h3 data-i18n="p3_title">净水器滤芯活性炭</h3><p class="models">SY8-20A<br>SY10-30A<br>SY20-40A<br>SY30-60A</p><p class="small"><span data-i18n="p3_desc">面向净水器滤芯应用的颗粒活性炭。</span></p></article>
     </div>
   </div>
 </section>
 
 <section id="technology" class="soft">
   <div class="wrap">
-    <div class="section-head"><div class="eyebrow" style="color:var(--green)">Technology</div><h2>加工与改性能力</h2><p>基于公司资料中列示的深加工及后处理工艺能力。</p></div>
+    <div class="section-head"><div class="eyebrow" style="color:var(--green)">Technology</div><h2 data-i18n="tech_title">加工与改性能力</h2><p><span data-i18n="tech_desc">基于公司资料中列示的深加工及后处理工艺能力。</span></p></div>
     <div class="cap">
-      <div><b>微细研磨</b><br><span class="small">用于炭棒炭粉，强调粒度均匀及调整能力。</span></div>
-      <div><b>深度酸洗除浮灰</b><br><span class="small">用于颗粒炭后处理，改善外观及相关水质表现。</span></div>
-      <div><b>水处理特殊改性</b><br><span class="small">针对水处理应用需求进行特殊改性。</span></div>
-      <div><b>空气处理特殊改性</b><br><span class="small">面向有机气体、甲醛、酸碱性气体、CO及臭氧等需求。</span></div>
+      <div><b data-i18n="cap1">微细研磨</b><br><span class="small">用于炭棒炭粉，强调粒度均匀及调整能力。</span></div>
+      <div><b data-i18n="cap2">深度酸洗除浮灰</b><br><span class="small">用于颗粒炭后处理，改善外观及相关水质表现。</span></div>
+      <div><b data-i18n="cap3">水处理特殊改性</b><br><span class="small">针对水处理应用需求进行特殊改性。</span></div>
+      <div><b data-i18n="cap4">空气处理特殊改性</b><br><span class="small">面向有机气体、甲醛、酸碱性气体、CO及臭氧等需求。</span></div>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="section-head"><div class="eyebrow" style="color:var(--green)">Typical Specification</div><h2>典型产品指标</h2><p>以下为现有产品宣传资料中列示的典型指标，具体规格以对应产品及双方确认要求为准。</p></div>
+    <div class="section-head"><div class="eyebrow" style="color:var(--green)">Typical Specification</div><h2 data-i18n="spec_title">典型产品指标</h2><p><span data-i18n="spec_desc">以下为现有产品宣传资料中列示的典型指标，具体规格以对应产品及双方确认要求为准。</span></p></div>
     <div class="specs">
-      <div class="spec"><span>碘值</span><b>≥1000</b><small>mg/g</small></div>
-      <div class="spec"><span>水分</span><b>≤5%</b></div>
-      <div class="spec"><span>灰分</span><b>≤3%</b></div>
-      <div class="spec"><span>强度</span><b>≥95%</b></div>
+      <div class="spec"><span data-i18n="iodine">碘值</span><b>≥1000</b><small>mg/g</small></div>
+      <div class="spec"><span data-i18n="moisture">水分</span><b>≤5%</b></div>
+      <div class="spec"><span data-i18n="ash">灰分</span><b>≤3%</b></div>
+      <div class="spec"><span data-i18n="hardness">强度</span><b>≥95%</b></div>
       <div class="spec"><span>pH</span><b>6–8</b></div>
     </div>
   </div>
@@ -113,22 +120,22 @@
 
 <section id="quality" class="soft">
   <div class="wrap">
-    <div class="section-head"><div class="eyebrow" style="color:var(--green)">Quality Control</div><h2>检测与品质管理</h2><p>将产品规格与具体批次/样品检测结果分开呈现。</p></div>
+    <div class="section-head"><div class="eyebrow" style="color:var(--green)">Quality Control</div><h2 data-i18n="quality_title">检测与品质管理</h2><p><span data-i18n="quality_desc">将产品规格与具体批次/样品检测结果分开呈现。</span></p></div>
     <div class="quality">
       <div class="card">
-        <h3>从加工到出厂检测</h3>
+        <h3 data-i18n="process_title">从加工到出厂检测</h3>
         <p>公司资料强调出厂产品进行检测，并根据客户差异化要求提供技术支持。</p>
         <div class="process"><span>原料</span><span>深加工</span><span>后处理 / 改性</span><span>检测</span><span>出厂</span></div>
         <p class="small" style="margin-top:22px">现有资料还包含涉及饮用水卫生安全产品卫生许可批件。正式公开完整证书信息前，建议确认对外披露范围及有效状态。</p>
       </div>
       <div class="result">
         <div class="eyebrow">Test Example</div>
-        <h3>SY10-30A 检测案例</h3>
-        <p class="small" style="color:#cbd5c7">酸洗椰壳活性炭，规格 10–30目；检测单日期：2026/4/8。</p>
+        <h3 data-i18n="test_title">SY10-30A 检测案例</h3>
+        <p class="small" style="color:#cbd5c7"><span data-i18n="test_desc">酸洗椰壳活性炭，规格 10–30目；检测单日期：2026/4/8。</span></p>
         <div class="result-grid">
-          <div><span>碘值</span><b>1059 mg/g</b></div>
-          <div><span>水分</span><b>4.8%</b></div>
-          <div><span>灰分</span><b>0.9%</b></div>
+          <div><span data-i18n="iodine">碘值</span><b>1059 mg/g</b></div>
+          <div><span data-i18n="moisture">水分</span><b>4.8%</b></div>
+          <div><span data-i18n="ash">灰分</span><b>0.9%</b></div>
           <div><span>pH</span><b>7.4</b></div>
           <div><span>TDS</span><b>43.6</b></div>
           <div><span>检测依据</span><b style="font-size:16px">GB/T 12496</b></div>
@@ -140,27 +147,105 @@
 
 <section id="applications">
   <div class="wrap">
-    <div class="section-head"><div class="eyebrow" style="color:var(--green)">Applications</div><h2>应用领域</h2><p>围绕现有产品与改性工艺所对应的应用方向。</p></div>
-    <div class="apps"><div class="app">净水器滤芯</div><div class="app">滤水壶</div><div class="app">炭棒</div><div class="app">水处理</div><div class="app">空气处理</div></div>
+    <div class="section-head"><div class="eyebrow" style="color:var(--green)">Applications</div><h2 data-i18n="apps_title">应用领域</h2><p><span data-i18n="apps_desc">围绕现有产品与改性工艺所对应的应用方向。</span></p></div>
+    <div class="apps"><div class="app" data-i18n="app1">净水器滤芯</div><div class="app" data-i18n="app2">滤水壶</div><div class="app" data-i18n="app3">炭棒</div><div class="app" data-i18n="app4">水处理</div><div class="app" data-i18n="app5">空气处理</div></div>
   </div>
 </section>
 
 <section id="about" class="soft">
   <div class="wrap about">
-    <div><div class="eyebrow" style="color:var(--green)">About Us</div><h2>关于 Increase Carbon</h2><p>现有公司资料显示，生产工厂位于广东省韶关市浈江区，专注于椰壳活性炭的深度加工和后处理改性，产品覆盖炭棒用炭粉以及滤芯用颗粒炭等系列。</p><p>网站对外品牌暂使用 <b>Increase Carbon</b>；正式上线前可再确认中文公司名称、英文法人名称及品牌名称的统一写法。</p></div>
-    <div class="card"><h3>我们提供什么</h3><ul class="checks"><li>根据应用匹配产品系列</li><li>椰壳活性炭深加工与后处理</li><li>针对差异化要求提供技术支持</li><li>产品检测及售后响应</li></ul><p class="small">宣传资料同时提及东南亚自建原料基地及24小时售后响应。正式对外发布时建议确认表述和证明资料。</p></div>
+    <div><div class="eyebrow" style="color:var(--green)">About Us</div><h2 data-i18n="about_title">关于 Increase Carbon</h2><p>现有公司资料显示，生产工厂位于广东省韶关市浈江区，专注于椰壳活性炭的深度加工和后处理改性，产品覆盖炭棒用炭粉以及滤芯用颗粒炭等系列。</p><p>网站对外品牌暂使用 <b>Increase Carbon</b>；正式上线前可再确认中文公司名称、英文法人名称及品牌名称的统一写法。</p></div>
+    <div class="card"><h3 data-i18n="offer_title">我们提供什么</h3><ul class="checks"><li>根据应用匹配产品系列</li><li>椰壳活性炭深加工与后处理</li><li>针对差异化要求提供技术支持</li><li>产品检测及售后响应</li></ul><p class="small">宣传资料同时提及东南亚自建原料基地及24小时售后响应。正式对外发布时建议确认表述和证明资料。</p></div>
   </div>
 </section>
 
 <section id="contact" class="contact">
   <div class="wrap contact-grid">
-    <div><div class="eyebrow">Contact</div><h2>告诉我们您的应用与规格要求</h2><p>可提供产品型号、粒度、碘值、水分、灰分、pH、使用场景及预计需求量，以便后续进行产品匹配。</p></div>
-    <div class="card" style="color:var(--ink)"><h3>产品咨询</h3><p>联系电话 / Email / 联系人</p><p class="small">这里暂时保留为联系方式区域。确认希望公开的电话、邮箱和联系人后再填写。</p></div>
+    <div><div class="eyebrow">Contact</div><h2 data-i18n="contact_title">告诉我们您的应用与规格要求</h2><p><span data-i18n="contact_desc">可提供产品型号、粒度、碘值、水分、灰分、pH、使用场景及预计需求量，以便后续进行产品匹配。</span></p></div>
+    <div class="card" style="color:var(--ink)"><h3 data-i18n="inquiry_title">产品咨询</h3><p><span data-i18n="inquiry_fields">联系电话 / Email / 联系人</span></p><p class="small">这里暂时保留为联系方式区域。确认希望公开的电话、邮箱和联系人后再填写。</p></div>
   </div>
   <div class="wrap notice">注：本 V1 页面内容依据当前提供的公司宣传资料、产品资料、检测单及资质照片整理；具体产品规格及认证信息以正式技术资料和有效文件为准。</div>
 </section>
 </main>
 
 <footer><div class="wrap">© 2026 Increase Carbon. All rights reserved.</div></footer>
+
+<script>
+const translations = {
+  zh: {
+    nav_products:"产品",nav_technology:"技术",nav_applications:"应用",nav_quality:"品质",nav_about:"关于我们",nav_contact:"联系",
+    hero_title:"椰壳活性炭深加工与改性解决方案",
+    hero_desc:"面向净水器、滤水壶、炭棒、水处理及空气处理应用，提供颗粒炭、炭粉及针对客户需求的后处理与改性支持。",
+    view_products:"查看产品",contact_us:"联系我们",products_title:"产品中心",products_desc:"根据现有产品资料整理的主要产品系列。",
+    p1_title:"炭棒生产专用炭粉",p1_desc:"用于炭棒生产的活性炭粉产品系列。",
+    p2_title:"滤水壶滤芯活性炭",p2_desc:"面向滤水壶滤芯应用的颗粒活性炭。",
+    p3_title:"净水器滤芯活性炭",p3_desc:"面向净水器滤芯应用的颗粒活性炭。",
+    tech_title:"加工与改性能力",tech_desc:"基于公司资料中列示的深加工及后处理工艺能力。",
+    cap1:"微细研磨",cap2:"深度酸洗除浮灰",cap3:"水处理特殊改性",cap4:"空气处理特殊改性",
+    spec_title:"典型产品指标",spec_desc:"以下为现有产品宣传资料中列示的典型指标，具体规格以对应产品及双方确认要求为准。",
+    iodine:"碘值",moisture:"水分",ash:"灰分",hardness:"强度",
+    quality_title:"检测与品质管理",quality_desc:"将产品规格与具体批次/样品检测结果分开呈现。",
+    process_title:"从加工到出厂检测",test_title:"SY10-30A 检测案例",test_desc:"酸洗椰壳活性炭，规格 10–30目；检测单日期：2026/4/8。",
+    apps_title:"应用领域",apps_desc:"围绕现有产品与改性工艺所对应的应用方向。",
+    app1:"净水器滤芯",app2:"滤水壶",app3:"炭棒",app4:"水处理",app5:"空气处理",
+    about_title:"关于 Increase Carbon",offer_title:"我们提供什么",
+    contact_title:"告诉我们您的应用与规格要求",contact_desc:"可提供产品型号、粒度、碘值、水分、灰分、pH、使用场景及预计需求量，以便后续进行产品匹配。",
+    inquiry_title:"产品咨询",inquiry_fields:"联系电话 / Email / 联系人"
+  },
+  ja: {
+    nav_products:"製品",nav_technology:"技術",nav_applications:"用途",nav_quality:"品質",nav_about:"会社情報",nav_contact:"お問い合わせ",
+    hero_title:"ヤシ殻活性炭の高度加工・改質ソリューション",
+    hero_desc:"浄水器、ポット型浄水器、カーボンブロック、水処理、空気処理向けに、粒状活性炭・粉末活性炭およびお客様の要求に応じた後処理・改質を提供します。",
+    view_products:"製品を見る",contact_us:"お問い合わせ",products_title:"製品ラインアップ",products_desc:"現在の製品資料に基づく主要製品シリーズです。",
+    p1_title:"カーボンブロック用粉末活性炭",p1_desc:"カーボンブロック製造向けの粉末活性炭シリーズです。",
+    p2_title:"ポット型浄水器フィルター用活性炭",p2_desc:"ポット型浄水器フィルター向けの粒状活性炭です。",
+    p3_title:"浄水器フィルター用活性炭",p3_desc:"浄水器フィルター向けの粒状活性炭です。",
+    tech_title:"加工・改質技術",tech_desc:"会社資料に記載されている高度加工および後処理技術です。",
+    cap1:"微粉砕",cap2:"高度酸洗浄・微粉除去",cap3:"水処理向け特殊改質",cap4:"空気処理向け特殊改質",
+    spec_title:"代表的な製品仕様",spec_desc:"以下は現在の製品資料に記載された代表値です。個別仕様は対象製品および双方で合意した要求事項によります。",
+    iodine:"ヨウ素吸着値",moisture:"水分",ash:"灰分",hardness:"硬さ",
+    quality_title:"検査・品質管理",quality_desc:"製品仕様と個別ロット／サンプルの測定結果を分けて表示しています。",
+    process_title:"加工から出荷検査まで",test_title:"SY10-30A 測定例",test_desc:"酸洗浄ヤシ殻活性炭、粒度10–30メッシュ。検査日：2026/4/8。",
+    apps_title:"用途",apps_desc:"現在の製品および改質技術に対応する主な用途です。",
+    app1:"浄水器フィルター",app2:"ポット型浄水器",app3:"カーボンブロック",app4:"水処理",app5:"空気処理",
+    about_title:"Increase Carbonについて",offer_title:"提供できること",
+    contact_title:"用途・仕様をご相談ください",contact_desc:"製品型番、粒度、ヨウ素吸着値、水分、灰分、pH、使用用途、予定数量などをご提示いただければ、製品選定の検討に活用できます。",
+    inquiry_title:"製品お問い合わせ",inquiry_fields:"電話 / Email / 担当者"
+  },
+  en: {
+    nav_products:"Products",nav_technology:"Technology",nav_applications:"Applications",nav_quality:"Quality",nav_about:"About",nav_contact:"Contact",
+    hero_title:"Advanced Processing & Modification Solutions for Coconut Shell Activated Carbon",
+    hero_desc:"Granular and powdered activated carbon for water purifiers, pitcher filters, carbon blocks, water treatment and air treatment, with post-processing and modification support for customer-specific requirements.",
+    view_products:"View Products",contact_us:"Contact Us",products_title:"Products",products_desc:"Main product series based on the current product materials.",
+    p1_title:"Powdered Activated Carbon for Carbon Blocks",p1_desc:"Powdered activated carbon series for carbon block production.",
+    p2_title:"Activated Carbon for Pitcher Filters",p2_desc:"Granular activated carbon for pitcher filter applications.",
+    p3_title:"Activated Carbon for Water Purifier Filters",p3_desc:"Granular activated carbon for water purifier filter applications.",
+    tech_title:"Processing & Modification Capabilities",tech_desc:"Advanced processing and post-treatment capabilities described in the company materials.",
+    cap1:"Fine Grinding",cap2:"Deep Acid Washing & Fine-Dust Removal",cap3:"Special Modification for Water Treatment",cap4:"Special Modification for Air Treatment",
+    spec_title:"Typical Product Specifications",spec_desc:"The following values are typical specifications stated in the current product materials. Final specifications depend on the applicable product and mutually agreed requirements.",
+    iodine:"Iodine Adsorption",moisture:"Moisture",ash:"Ash Content",hardness:"Hardness",
+    quality_title:"Testing & Quality Control",quality_desc:"Product specifications are presented separately from individual lot/sample test results.",
+    process_title:"From Processing to Final Inspection",test_title:"SY10-30A Test Example",test_desc:"Acid-washed coconut shell activated carbon, 10–30 mesh. Test date: 2026/4/8.",
+    apps_title:"Applications",apps_desc:"Main application areas corresponding to the current products and modification processes.",
+    app1:"Water Purifier Filters",app2:"Pitcher Filters",app3:"Carbon Blocks",app4:"Water Treatment",app5:"Air Treatment",
+    about_title:"About Increase Carbon",offer_title:"What We Offer",
+    contact_title:"Tell Us Your Application & Specification Requirements",contact_desc:"Please provide the product model, particle size, iodine adsorption, moisture, ash content, pH, application and estimated quantity to support product matching.",
+    inquiry_title:"Product Inquiry",inquiry_fields:"Phone / Email / Contact Person"
+  }
+};
+
+function setLanguage(lang){
+  document.documentElement.lang = lang === "zh" ? "zh-CN" : lang;
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const key = el.dataset.i18n;
+    if(translations[lang] && translations[lang][key] !== undefined) el.textContent = translations[lang][key];
+  });
+  document.querySelectorAll("[data-lang]").forEach(btn=>btn.classList.toggle("active", btn.dataset.lang === lang));
+  localStorage.setItem("increase-carbon-lang", lang);
+}
+document.querySelectorAll("[data-lang]").forEach(btn=>btn.addEventListener("click",()=>setLanguage(btn.dataset.lang)));
+setLanguage(localStorage.getItem("increase-carbon-lang") || "zh");
+</script>
+
 </body>
 </html>
